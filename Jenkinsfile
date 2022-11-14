@@ -1,7 +1,7 @@
 pipeline {
     agent {
         node {
-            label 'my-defined-label'
+            label 'Node'
             customWorkspace 'C:/Program Files/nodejs'
         }
     }
