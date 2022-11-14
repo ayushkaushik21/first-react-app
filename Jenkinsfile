@@ -18,7 +18,8 @@ pipeline {
         }
         stage('Deliver') { 
             steps {
-                sh 'nohup serve -s build &' 
+                sh 'cp -r build /var/www/react-build/' 
+                sh 'service nginx restart'
             }
         }
     }
