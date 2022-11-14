@@ -1,7 +1,9 @@
 pipeline {
-    agent node {
-        label 'my-defined-label'
-        customWorkspace 'C:/Program Files/nodejs'
+    agent {
+        node {
+            label 'my-defined-label'
+            customWorkspace 'C:/Program Files/nodejs'
+        }
     }
     stages {
         stage('Build') {
