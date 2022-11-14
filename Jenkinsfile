@@ -20,7 +20,6 @@ pipeline {
             steps {
                 sh 'rm -rf /var/www/react-build/build'
                 sh 'cp -r build /var/www/react-build/' 
-                sh 'service nginx restart'
             }
         }
     }
